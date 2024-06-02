@@ -1,0 +1,116 @@
+/* Main image styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Skill icons styling */
+.skill-icons {
+    max-width: 300px;
+    /* Increased size */
+    height: auto;
+    display: inline-block;
+    margin: 10px 5px;
+}
+
+/* Skill icons container */
+.skill-icons-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Paragraph styling */
+p.homeIntro {
+    text-align: justify;
+    margin: 10px;
+    line-height: 1.6;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.skills {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact section {
+    flex: 1 1 calc(33.333% - 20px);
+    margin: 10px;
+}
+
+/* Carousel container and items */
+.container {
+    text-align: center;
+    margin: 20px auto;
+    overflow: hidden;
+    /* Added to hide overflow */
+}
+
+.carousel-view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    max-width: 100%;
+    height: auto;
+    display: none;
+    /* Hide all items initially */
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Adjust button styles */
+.prev-btn,
+.next-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    background-color: #555;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .contact section {
+        flex: 1 1 100%;
+    }
+
+    .carousel-view {
+        flex-direction: column;
+    }
+
+    .prev-btn,
+    .next-btn {
+        margin: 10px 0;
+    }
+
+    .item-list,
+    .item {
+        width: 100%;
+    }
+}

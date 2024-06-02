@@ -183,7 +183,7 @@ html {
 }
 
 body {
-  background-color: #65717d;
+  background-color: #222a32;
 }
 
 body.is-preload *,
@@ -199,9 +199,7 @@ body.is-preload *:after {
   transition: none !important;
 }
 
-/* Type */
-
-html {
+/Type */ html {
   font-size: 16pt;
 }
 
@@ -4810,4 +4808,61 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
   width: 70vw;
   display: flex;
   scroll-behavior: smooth
+}
+
+/* Skill icons styling */
+.skill-icons {
+  max-width: 50px;
+  height: auto;
+  display: inline-block;
+  margin: 10px 5px;
+}
+
+/* Paragraph styling */
+p.homeIntro {
+  text-align: justify;
+  margin: 20px;
+  line-height: 1.6;
+}
+
+.skills {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Flexbox for skill icons */
+.skills a {
+  display: inline-block;
+  margin: 5px;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact section {
+  flex: 1 1 calc(33.333% - 20px);
+  margin: 10px;
+}
+
+/* Carousel container and items */
+.container {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.carousel-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-list {
+  display: flex;
+  overflow: hidden;
+  width: 300px;
+  /* Adjust the width as needed */
+  margin: 0 auto;
 }
