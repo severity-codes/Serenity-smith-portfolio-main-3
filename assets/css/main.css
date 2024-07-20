@@ -4997,6 +4997,13 @@ p.homeIntro {
   justify-content: space-between;
 }
 
+.projects {
+  display: flex;
+  margin: 10px;
+  margin-left: auto; /* This will push the projects to the right */
+  padding-left: 200px; /* Adjust the padding value as needed */
+}
+
 .contact section {
   flex: 1 1 calc(33.333% - 20px);
   margin: 10px;
