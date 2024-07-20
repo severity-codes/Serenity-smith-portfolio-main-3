@@ -354,8 +354,9 @@ body.is-preload *:after {
   transition: none !important;
 }
 
-/Type */ html {
-  font-size: 16pt;
+/* Type */
+
+html {  font-size: 16pt;
 }
 
 @media screen and (max-width: 1680px) {
@@ -827,8 +828,8 @@ hr {
 
 @media screen and (max-width: 1680px) {
   .row {
-    display:
-      tg flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
     box-sizing: border-box;
     align-items: stretch;
   }
@@ -4938,7 +4939,9 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
   #navPanel {}
 
   @media screen and (max-width: 980px) {
-    body.is-navP padding: 2.5rem 1.75rem;
+    body.is-navPanel-visible #wrapper {
+      padding: 2.5rem 1.75rem;
+    }
   }
 
   anel-visible #wrapper {
